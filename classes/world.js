@@ -156,7 +156,6 @@ class World
 
     DoDayNightCycle(){
         if (Math.floor(time / 1000) - (time / 1000).toFixed(1) == 0){
-            console.log("doing");
             this.UpdateLight();
         }
         this.dayTime += this.timePassSpeed * deltaTime;
