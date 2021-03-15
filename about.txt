@@ -1,0 +1,22 @@
+<hr>
+<p style="text-align: center; margin-top: 0px; margin-bottom: 0px"> Pixel World </p>
+
+    This is a procedurally generated world created with a mix of noises. The height maps are generated and the block types are choosen based on it's neighbors or its position. It's highly inspirated by the game Minecraft, that uses a similar way of building it's terrains.
+    Another feature that I added was a lighting system. Each block has a different light pass and lights its neightbor blocks recursively.
+
+Notes:
+    The world generation is based on a single seed, a value that defines wich pseudo random numbers will be generated. Every world has a seed, and one seed can not generate two different worlds.
+
+(If you spawn in the sea, you can refresh the page to ganerate a new seed)
+
+<hr>
+Controlls:
+
+    Left mouse button: Removes a block.
+    Right mouse button: Places a block.
+    Mouse Scroll: Increases or decreases zoom (may cause lag).
+    A, D: Moves the character left and right, respectively.
+    Space: Jump.
+
+<hr>
+<p style="text-align: right; margin-bottom: 0px;">by Vito</p>

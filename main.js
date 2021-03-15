@@ -13,6 +13,8 @@ function Run(){
     InitGame();
     
     CreateInputs({});
+
+    About.setAbout("left");
     
     world = new World();
     camera = new Camera();
@@ -20,7 +22,7 @@ function Run(){
     let randomXpos = Math.floor((Math.random() * 200) - 100) + 0.5;
     world.GenerateRecursiveWorld(randomXpos, world.renderChunksDistance);
     
-    new Player(new Vector2(randomXpos, world.chunks[0].GetTerrainHeight(randomXpos)));
+    new Player(new Vector2(randomXpos, Math.max(world.chunks[0].GetTerrainHeight(randomXpos), world.seaLevel)));
     
     blockSelected = BLOCK.STONE;
     
